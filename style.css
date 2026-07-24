@@ -439,6 +439,7 @@ body {
 
 .nav-container {
   width: 90%;
+  max-width: var(--container-max-width);
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -1780,15 +1781,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav-container {
-    width: 100%;   
-    max-width: none;
-    padding: 0 16px; 
-  }
-  .navbar-header {
-    height: var(--nav-height);      /* allow header to grow naturally */
-  }
-
   .nav-links {
     position: fixed;
     top: var(--nav-height);
@@ -1861,14 +1853,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .nav-container {
-    width: 100%;   
-    max-width: none;
-    padding: 0 16px; 
-  }
-  .navbar-header {
-    height: var(--nav-height);      /* allow header to grow naturally */
-  }
   .hero-buttons {
     flex-direction: column;
     width: 100%;
