@@ -1780,6 +1780,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .nav-container {
+    width: 100%;   
+    max-width: none;
+    padding: 0 16px; 
+  }
+
   .nav-links {
     position: fixed;
     top: var(--nav-height);
