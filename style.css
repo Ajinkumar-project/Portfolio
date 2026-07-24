@@ -1858,6 +1858,11 @@ body {
 }
 
 @media (max-width: 480px) {
+  .nav-container {
+    width: 100%;   
+    max-width: none;
+    padding: 0 16px; 
+  }
   .hero-buttons {
     flex-direction: column;
     width: 100%;
