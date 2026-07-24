@@ -1785,6 +1785,9 @@ body {
     max-width: none;
     padding: 0 16px; 
   }
+  .navbar-header {
+    height: var(--nav-height);      /* allow header to grow naturally */
+  }
 
   .nav-links {
     position: fixed;
