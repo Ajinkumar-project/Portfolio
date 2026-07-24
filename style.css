@@ -1785,7 +1785,7 @@ body {
     position: fixed;
     top: var(--nav-height);
     left: -100%;
-    width: 100%;
+    width: auto;
     height: calc(100vh - var(--nav-height));
     background: var(--bg-primary);
     flex-direction: column;
