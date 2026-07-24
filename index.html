@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajin Kumar S | Software Developer & Full Stack Engineer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Ajin Kumar S - B.Tech IT Graduate, Python Full Stack Developer, Django & Flutter Specialist, and AI Enthusiast." />
+  <meta name="keywords"
+    content="Ajin Kumar S, Software Developer, Python Developer, Django, Flutter, Full Stack, AI, Kanyakumari, Tamil Nadu" />
+  <meta property="og:title" content="Ajin Kumar S - Software & Full Stack Developer Portfolio" />
+  <meta property="og:description"
+    content="B.Tech IT fresher with hands-on experience in Python, Django, Flutter, REST APIs, and Machine Learning." />
+  <meta property="og:image" content="./1784822278500.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Custom Glowing Pointer Cursor -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+  <!-- Background Ambient Glow Effects -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-code">&lt;</span>Ajin<span class="logo-dot">.</span>Kumar<span class="logo-code"> /&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#certifications" class="nav-link">Certificates</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary nav-cta">
+          <span>Get In Touch</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </a>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="section-container hero-grid">
+
+        <div class="hero-content reveal-on-scroll fade-up">
+          <div class="status-badge">
+            <span class="status-dot pulse"></span>
+            <span class="status-text">Open to Work &amp; New Opportunities</span>
+          </div>
+
+          <h1 class="hero-name">
+            Hi, I'm <span class="gradient-text">Ajin Kumar S</span>
+          </h1>
+
+          <div class="typing-container">
+            <span class="typing-prefix">I am a </span>
+            <span id="typing-text" class="typing-dynamic"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate B.Tech Information Technology Graduate specializing in <strong>Python Full Stack
+              Development</strong>, <strong>Django</strong>, <strong>Flutter Mobile Apps</strong>, and <strong>AI
+              Integration</strong>. Eager to solve complex problems and build scalable web &amp; mobile solutions.
+          </p>
+
+          <div class="hero-meta-row">
+            <div class="meta-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Kanyakumari, Tamil Nadu, India</span>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>B.Tech IT (2022 - 2026) • 7.9 CGPA</span>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary btn-lg hover-lift">
+              <span>View Projects List</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-lg hover-lift">
+              <span>Contact Details</span>
+              <i class="fa-solid fa-address-book"></i>
+            </a>
+            <a href="./Ajin%20Kumar%20%28Resume%29.pdf" download="Ajin Kumar (Resume).pdf" id="download-resume-btn"
+              class="btn btn-outline btn-lg hover-lift">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="social-label">Connect with me:</span>
+            <a href="https://github.com/Ajinkumar-project" target="_blank" rel="noopener noreferrer"
+              class="social-icon hover-bounce" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/ajin-kumar-28421b286" target="_blank" rel="noopener noreferrer"
+              class="social-icon hover-bounce" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:ajinkumar.s2004@gmail.com" class="social-icon hover-bounce" title="Email Direct">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+918754236739" class="social-icon hover-bounce" title="Call Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-on-scroll zoom-in">
+          <div class="avatar-card">
+            <div class="avatar-glow"></div>
+            <div class="avatar-image-wrapper">
+              <img src="./1784822278500.png" alt="Ajin Kumar S Profile Photo" class="avatar-img" />
+            </div>
+            <div class="avatar-floating-badge badge-1">
+              <i class="fa-brands fa-python"></i>
+              <span>Python &amp; Django</span>
+            </div>
+            <div class="avatar-floating-badge badge-2">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <span>Flutter Dev</span>
+            </div>
+            <div class="avatar-floating-badge badge-3">
+              <i class="fa-solid fa-brain"></i>
+              <span>AI Enthusiast</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+
+        <div class="section-header text-center reveal-on-scroll fade-up">
+          <span class="section-subtitle">Who I Am</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card hover-glow-card reveal-on-scroll slide-right">
+            <h3 class="about-heading"><i class="fa-solid fa-user-astronaut"></i> Professional Overview</h3>
+            <p>
+              I am a motivated and tech-driven <strong>Information Technology graduate</strong> from <strong>Marthandam
+                College of Engineering and Technology (Anna University)</strong>. With intensive internship experience
+              in <strong>Python Full Stack Development</strong>, <strong>Web Engineering</strong>, and <strong>AI
+                Concepts</strong>, I bring hands-on experience building web and mobile applications from concept to
+              deployment.
+            </p>
+            <p>
+              My expertise spans modern web frameworks like <strong>Django &amp; Bootstrap</strong>, cross-platform
+              mobile apps with <strong>Flutter &amp; Dart</strong>, relational databases like <strong>MySQL &amp;
+                SQLite</strong>, and machine learning models for practical problem solving.
+            </p>
+          </div>
+
+          <div class="about-stats-grid reveal-on-scroll slide-left">
+            <div class="stat-card glass-card hover-glow-card">
+              <div class="stat-icon"><i class="fa-solid fa-code-commit"></i></div>
+              <div class="stat-number">4+</div>
+              <div class="stat-label">Internships Completed</div>
+            </div>
+
+            <div class="stat-card glass-card hover-glow-card">
+              <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Major Featured Projects</div>
+            </div>
+
+            <div class="stat-card glass-card hover-glow-card">
+              <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="stat-number">7+</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+
+            <div class="stat-card glass-card hover-glow-card">
+              <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="stat-number">7.9</div>
+              <div class="stat-label">B.Tech IT CGPA</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section id="skills" class="skills-section">
+      <div class="section-container">
+
+        <div class="section-header text-center reveal-on-scroll fade-up">
+          <span class="section-subtitle">My Technical Toolkit</span>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-filter-tabs reveal-on-scroll fade-up">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="languages">Languages</button>
+          <button class="filter-btn" data-filter="web">Web &amp; Backend</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Dev</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; Automation</button>
+          <button class="filter-btn" data-filter="tools">Database &amp; Tools</button>
+          <button class="filter-btn" data-filter="design">Design &amp; UI</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skill Items with Enhanced Hover Animations -->
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="languages">
+            <div class="skill-icon python-color"><i class="fa-brands fa-python"></i></div>
+            <h4 class="skill-name">Python</h4>
+            <span class="skill-level">Proficient</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="languages">
+            <div class="skill-icon java-color"><i class="fa-brands fa-java"></i></div>
+            <h4 class="skill-name">Java Essentials</h4>
+            <span class="skill-level">Core Fundamentals</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="languages web">
+            <div class="skill-icon js-color"><i class="fa-brands fa-js"></i></div>
+            <h4 class="skill-name">JavaScript</h4>
+            <span class="skill-level">Intermediate</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="languages tools">
+            <div class="skill-icon sql-color"><i class="fa-solid fa-database"></i></div>
+            <h4 class="skill-name">SQL</h4>
+            <span class="skill-level">Proficient</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="languages web">
+            <div class="skill-icon html-color"><i class="fa-brands fa-html5"></i></div>
+            <h4 class="skill-name">HTML5 &amp; CSS3</h4>
+            <span class="skill-level">Advanced</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="web">
+            <div class="skill-icon django-color"><i class="fa-solid fa-server"></i></div>
+            <h4 class="skill-name">Django</h4>
+            <span class="skill-level">Full Stack Framework</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="web">
+            <div class="skill-icon bootstrap-color"><i class="fa-brands fa-bootstrap"></i></div>
+            <h4 class="skill-name">Bootstrap</h4>
+            <span class="skill-level">Responsive Design</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="web">
+            <div class="skill-icon api-color"><i class="fa-solid fa-network-wired"></i></div>
+            <h4 class="skill-name">REST APIs</h4>
+            <span class="skill-level">Integration &amp; Design</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="mobile">
+            <div class="skill-icon flutter-color"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h4 class="skill-name">Flutter</h4>
+            <span class="skill-level">Cross-Platform Apps</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="mobile">
+            <div class="skill-icon dart-color"><i class="fa-solid fa-code"></i></div>
+            <h4 class="skill-name">Dart</h4>
+            <span class="skill-level">Mobile Programming</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="tools">
+            <div class="skill-icon mysql-color"><i class="fa-solid fa-database"></i></div>
+            <h4 class="skill-name">MySQL &amp; SQLite</h4>
+            <span class="skill-level">Relational Databases</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="ai">
+            <div class="skill-icon ai-color"><i class="fa-solid fa-robot"></i></div>
+            <h4 class="skill-name">AI &amp; ML Fundamentals</h4>
+            <span class="skill-level">Scikit-learn &amp; Analytics</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="ai">
+            <div class="skill-icon prompt-color"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h4 class="skill-name">Prompt Engineering</h4>
+            <span class="skill-level">AI Workflows</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="tools">
+            <div class="skill-icon git-color"><i class="fa-brands fa-git-alt"></i></div>
+            <h4 class="skill-name">Git &amp; GitHub</h4>
+            <span class="skill-level">Version Control</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="tools">
+            <div class="skill-icon vscode-color"><i class="fa-solid fa-laptop-code"></i></div>
+            <h4 class="skill-name">VS Code &amp; Android Studio</h4>
+            <span class="skill-level">IDEs &amp; Tooling</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="tools">
+            <div class="skill-icon linux-color"><i class="fa-brands fa-linux"></i></div>
+            <h4 class="skill-name">Linux </h4>
+            <span class="skill-level">OS &amp; API Testing</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="design">
+            <div class="skill-icon ps-color"><i class="fa-solid fa-image"></i></div>
+            <h4 class="skill-name">Photoshop &amp; Premiere Pro</h4>
+            <span class="skill-level">Design &amp; Editing</span>
+          </div>
+
+          <div class="skill-card glass-card hover-glow-card reveal-on-scroll zoom-in" data-category="design">
+            <div class="skill-icon uiux-color"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h4 class="skill-name">UI/UX Fundamentals</h4>
+            <span class="skill-level">Wireframing &amp; UX</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FEATURED PROJECTS SECTION (INTERACTIVE LIST VIEW) -->
+    <section id="projects" class="projects-section">
+      <div class="section-container">
+
+        <div class="section-header text-center reveal-on-scroll fade-up">
+          <span class="section-subtitle">What I Have Built</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects List</span></h2>
+          <p class="section-lead">A detailed vertical showcase of my web, mobile, and AI projects with live demos and
+            code repositories.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Vertical Interactive Project List Container -->
+        <div class="projects-list-container">
+
+          <!-- Project List Item 1: MobileTech -->
+          <article class="project-list-item glass-card hover-glow-card reveal-on-scroll slide-right">
+            <div class="project-list-number">01</div>
+
+            <div class="project-list-main">
+              <div class="project-list-header">
+                <h3 class="project-list-title">MobileTech - E-Commerce Platform</h3>
+                <div class="project-status-badges">
+                  <span class="badge-tag django-badge"><i class="fa-brands fa-python"></i> Django Full Stack</span>
+                  <span class="status-live-tag"><i class="fa-solid fa-circle"></i> Deployed</span>
+                </div>
+              </div>
+
+              <p class="project-list-desc">
+                A feature-packed full-stack e-commerce web application engineered with Django. Includes secure user
+                authentication, responsive product catalog, dynamic shopping cart, instant search functionality, and an
+                intuitive admin management dashboard.
+              </p>
+
+              <div class="project-features-inline">
+                <span><i class="fa-solid fa-check"></i> User Auth &amp; Profiles</span>
+                <span><i class="fa-solid fa-check"></i> Dynamic Shopping Cart</span>
+                <span><i class="fa-solid fa-check"></i> Product Search</span>
+                <span><i class="fa-solid fa-check"></i> Admin Panel</span>
+              </div>
+
+              <div class="tech-stack-pills">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Django</span>
+                <span class="tech-pill">Bootstrap</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">SQLite</span>
+              </div>
+            </div>
+
+            <div class="project-list-actions">
+              <a href="https://mobiletech-production.up.railway.app/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-sm hover-lift pulse-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/Ajinkumar-project/MobileTech" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm hover-lift">
+                <i class="fa-brands fa-github"></i> GitHub Code
+              </a>
+            </div>
+          </article>
+
+          <!-- Project List Item 2: Flutter Music Player -->
+          <article class="project-list-item glass-card hover-glow-card reveal-on-scroll slide-left">
+            <div class="project-list-number">02</div>
+
+            <div class="project-list-main">
+              <div class="project-list-header">
+                <h3 class="project-list-title">Flutter Music Player App</h3>
+                <div class="project-status-badges">
+                  <span class="badge-tag flutter-badge"><i class="fa-solid fa-mobile-screen-button"></i> Flutter
+                    App</span>
+                  <span class="status-live-tag showcase-tag"><i class="fa-solid fa-circle"></i> Showcase</span>
+                </div>
+              </div>
+
+              <p class="project-list-desc">
+                A high-performance cross-platform audio player application built with Flutter &amp; Dart. Enables smooth
+                local audio playback, dynamic playlist curation, album artwork rendering, background playback controls,
+                and reactive state management.
+              </p>
+
+              <div class="project-features-inline">
+                <span><i class="fa-solid fa-check"></i> Local Audio Engine</span>
+                <span><i class="fa-solid fa-check"></i> Playlist Management</span>
+                <span><i class="fa-solid fa-check"></i> Background Playback</span>
+                <span><i class="fa-solid fa-check"></i> Modern UI</span>
+              </div>
+
+              <div class="tech-stack-pills">
+                <span class="tech-pill">Flutter</span>
+                <span class="tech-pill">Dart</span>
+                <span class="tech-pill">Audio Package</span>
+                <span class="tech-pill">GetX / Bloc</span>
+                <span class="tech-pill">Android</span>
+              </div>
+            </div>
+
+            <div class="project-list-actions">
+              <a href="https://ajinkumar-project.github.io/Boycott-subscription/" target="_blank"
+                rel="noopener noreferrer" class="btn btn-primary btn-sm hover-lift pulse-btn">
+                <i class="fa-solid fa-window-maximize"></i> Showcase
+              </a>
+              <a href="https://github.com/Ajinkumar-project/Boycott-subscription" target="_blank"
+                rel="noopener noreferrer" class="btn btn-outline btn-sm hover-lift">
+                <i class="fa-brands fa-github"></i> GitHub Code
+              </a>
+            </div>
+          </article>
+
+          <!-- Project List Item 3: Ad Click Fraud Detection -->
+          <article class="project-list-item glass-card hover-glow-card reveal-on-scroll slide-right">
+            <div class="project-list-number">03</div>
+
+            <div class="project-list-main">
+              <div class="project-list-header">
+                <h3 class="project-list-title">Ad Click Fraud Detection System</h3>
+                <div class="project-status-badges">
+                  <span class="badge-tag ai-badge"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+                  <span class="status-live-tag"><i class="fa-solid fa-circle"></i> Deployed</span>
+                </div>
+              </div>
+
+              <p class="project-list-desc">
+                An intelligent Machine Learning system designed to identify fraudulent ad click activities by modeling
+                user interaction patterns. Performs automated data preprocessing, feature engineering, classification
+                evaluation, and predictive analytics.
+              </p>
+
+              <div class="project-features-inline">
+                <span><i class="fa-solid fa-check"></i> ML Fraud Classifier</span>
+                <span><i class="fa-solid fa-check"></i> Data Preprocessing</span>
+                <span><i class="fa-solid fa-check"></i> Model Metrics</span>
+                <span><i class="fa-solid fa-check"></i> Web Analytics</span>
+              </div>
+
+              <div class="tech-stack-pills">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Machine Learning</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">Scikit-Learn</span>
+                <span class="tech-pill">Render</span>
+              </div>
+            </div>
+
+            <div class="project-list-actions">
+              <a href="https://ad-click-fraud-detection-eirz.onrender.com/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-sm hover-lift pulse-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live App
+              </a>
+              <a href="https://github.com/Ajinkumar-project/AD-CLICK-FRAUD-DETECTION-" target="_blank"
+                rel="noopener noreferrer" class="btn btn-outline btn-sm hover-lift">
+                <i class="fa-brands fa-github"></i> GitHub Code
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience-section">
+      <div class="section-container">
+
+        <div class="section-header text-center reveal-on-scroll fade-up">
+          <span class="section-subtitle">My Career Journey</span>
+          <h2 class="section-title">Internship <span class="gradient-text">Experience</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Internship 1 -->
+          <div class="timeline-item reveal-on-scroll slide-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card hover-glow-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Python Full Stack Intern</h3>
+                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Cadpoint, Marthandam</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> Dec 2025 - Jun 2026</span>
+              </div>
+              <p class="role-desc">
+                Completed comprehensive intensive training and development in Python Full Stack architecture. Built
+                full-stack web applications using Django, REST APIs, databases, responsive frontend interfaces, and Git
+                version control workflows.
+              </p>
+              <div class="role-tags">
+                <span>Django</span>
+                <span>REST APIs</span>
+                <span>Full Stack</span>
+                <span>Databases</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internship 2 -->
+          <div class="timeline-item reveal-on-scroll slide-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card hover-glow-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Web Development Intern</h3>
+                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Technofly Solution, Bengaluru</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> Jul 2025 - Aug 2025</span>
+              </div>
+              <p class="role-desc">
+                Engaged in modern web development tasks, creating responsive web layouts and acquiring real-world
+                industry experience in both frontend user interfaces and backend API integrations.
+              </p>
+              <div class="role-tags">
+                <span>Web Development</span>
+                <span>Frontend UI</span>
+                <span>Responsive Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internship 3 -->
+          <div class="timeline-item reveal-on-scroll slide-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card hover-glow-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Python Intern</h3>
+                  <h4 class="company-name"><i class="fa-solid fa-building"></i> E-Max Education, Marthandam</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> Jan 2025 - Feb 2025</span>
+              </div>
+              <p class="role-desc">
+                Strengthened core Python programming proficiency through structured exercises, algorithm optimization,
+                software engineering fundamentals, and practical script development.
+              </p>
+              <div class="role-tags">
+                <span>Python Core</span>
+                <span>Software Logic</span>
+                <span>Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internship 4 -->
+          <div class="timeline-item reveal-on-scroll slide-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card hover-glow-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Python &amp; AI Intern</h3>
+                  <h4 class="company-name"><i class="fa-solid fa-building"></i> Scope India, Thiruvananthapuram</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> Feb 2024 - Mar 2024</span>
+              </div>
+              <p class="role-desc">
+                Completed hands-on practical training in Artificial Intelligence and Python programming. Explored
+                machine learning algorithms, model building concepts, and AI application development pipelines.
+              </p>
+              <div class="role-tags">
+                <span>Artificial Intelligence</span>
+                <span>Python</span>
+                <span>Machine Learning</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="certifications-section">
+      <div class="section-container">
+
+        <div class="section-header text-center reveal-on-scroll fade-up">
+          <span class="section-subtitle">Continuous Learning</span>
+          <h2 class="section-title">Certifications &amp; <span class="gradient-text">Workshops</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="certifications-grid">
+
+          <div class="cert-card glass-card hover-glow-card reveal-on-scroll zoom-in">
+            <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+            <h4 class="cert-title">Python Full Stack Development</h4>
+            <p class="cert-issuer">Cadpoint, Marthandam</p>
+            <span class="cert-tag">Verified Professional Internship Certificate</span>
+          </div>
+
+          <div class="cert-card glass-card hover-glow-card reveal-on-scroll zoom-in">
+            <div class="cert-badge"><i class="fa-solid fa-brain"></i></div>
+            <h4 class="cert-title">Python &amp; Artificial Intelligence</h4>
+            <p class="cert-issuer">Scope India, Thiruvananthapuram</p>
+            <span class="cert-tag">AI &amp; ML Practical Certificate</span>
+          </div>
+
+          <div class="cert-card glass-card hover-glow-card reveal-on-scroll zoom-in">
+            <div class="cert-badge"><i class="fa-solid fa-globe"></i></div>
+            <h4 class="cert-title">Web Development</h4>
+            <p class="cert-issuer">Technofly Solution, Bengaluru</p>
+            <span class="cert-tag">Industry Internship Certificate</span>
+          </div>
+
+          <div class="cert-card glass-card hover-glow-card reveal-on-scroll zoom-in">
+            <div class="cert-badge"><i class="fa-brands fa-python"></i></div>
+            <h4 class="cert-title">Python Programming</h4>
+            <p class="cert-issuer">E-Max Education, Marthandam</p>
+            <span class="cert-tag">Programming Foundations</span>
+          </div>
+
+          <div class="cert-card glass-card hover-glow-card reveal-on-scroll zoom-in">
+            <div class="cert-badge"><i class="fa-solid fa-server"></i></div>
+            <h4 class="cert-title">Django Essentials Workshop</h4>
+            <p class="cert-issuer">NetworkZ Systems</p>
+            <span class="cert-tag">Backend Framework Workshop</span>
+          </div>
+
+          <div class="cert-card glass-card hover-glow-card reveal-on-scroll zoom-in">
+            <div class="cert-badge"><i class="fa-solid fa-pen-nib"></i></div>
+            <h4 class="cert-title">UI/UX Design Addon Course</h4>
+            <p class="cert-issuer">Sharon Software</p>
+            <span class="cert-tag">Design Systems &amp; Wireframing</span>
+          </div>
+
+          <div class="cert-card glass-card hover-glow-card reveal-on-scroll zoom-in">
+            <div class="cert-badge"><i class="fa-solid fa-rocket"></i></div>
+            <h4 class="cert-title">Application Development Master Class</h4>
+            <p class="cert-issuer">Codewide Learning Hub</p>
+            <span class="cert-tag">Advanced App Architecture</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education-section">
+      <div class="section-container">
+
+        <div class="section-header text-center reveal-on-scroll fade-up">
+          <span class="section-subtitle">Academic Qualification</span>
+          <h2 class="section-title">Education <span class="gradient-text">Background</span></h2>
+          <p class="section-lead">An interactive chronological view of my academic qualifications and achievements.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Academic Pathway Roadmap Stepper -->
+        <div class="education-pathway reveal-on-scroll fade-up">
+          <div class="pathway-line"></div>
+
+          <!-- Step 1: B.Tech IT -->
+          <div class="pathway-step active reveal-on-scroll slide-right">
+            <div class="pathway-node">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div class="pathway-card glass-card hover-glow-card main-edu-card">
+              <div class="pathway-header">
+                <span class="pathway-badge current">Current Degree</span>
+                <span class="pathway-duration"><i class="fa-solid fa-calendar"></i> 2022 - 2026</span>
+              </div>
+
+              <h3 class="pathway-title">Bachelor of Technology (B.Tech) in Information Technology</h3>
+              <h4 class="pathway-institution">Marthandam College of Engineering and Technology</h4>
+              <p class="pathway-meta"><i class="fa-solid fa-university"></i> Affiliated with Anna University</p>
+
+              <div class="pathway-score">
+                <span class="score-icon"><i class="fa-solid fa-star"></i></span>
+                <span class="score-text">CGPA: <strong>7.9 / 10</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Class XII -->
+          <div class="pathway-step reveal-on-scroll slide-left">
+            <div class="pathway-node">
+              <i class="fa-solid fa-school"></i>
+            </div>
+
+            <div class="pathway-card glass-card hover-glow-card">
+              <div class="pathway-header">
+                <span class="pathway-badge completed">Higher Secondary</span>
+                <span class="pathway-duration"><i class="fa-solid fa-calendar"></i> 2022</span>
+              </div>
+
+              <h3 class="pathway-title">Higher Secondary Education (Class XII)</h3>
+              <h4 class="pathway-institution">Friends Matric Higher Secondary School, Kaliyakkavilai</h4>
+              <p class="pathway-meta"><i class="fa-solid fa-certificate"></i> State Board, Tamil Nadu</p>
+
+              <div class="pathway-score alt-score">
+                <span class="score-icon"><i class="fa-solid fa-award"></i></span>
+                <span class="score-text">Percentage: <strong>69.33%</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Class X -->
+          <div class="pathway-step reveal-on-scroll slide-right">
+            <div class="pathway-node">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <div class="pathway-card glass-card hover-glow-card">
+              <div class="pathway-header">
+                <span class="pathway-badge completed">Secondary School</span>
+                <span class="pathway-duration"><i class="fa-solid fa-calendar"></i> 2020</span>
+              </div>
+
+              <h3 class="pathway-title">Secondary School Education (Class X)</h3>
+              <h4 class="pathway-institution">Friends Matric Higher Secondary School, Kaliyakkavilai</h4>
+              <p class="pathway-meta"><i class="fa-solid fa-certificate"></i> State Board, Tamil Nadu</p>
+
+              <div class="pathway-score alt-score">
+                <span class="score-icon"><i class="fa-solid fa-award"></i></span>
+                <span class="score-text">Percentage: <strong>75.40%</strong></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT SECTION (REFACTORED - NO FORM) -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+
+        <div class="section-header text-center reveal-on-scroll fade-up">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-lead">I am actively seeking software engineering, full-stack, and Python/Django developer
+            roles. Reach out directly below!</p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-center-hub reveal-on-scroll fade-up">
+
+          <div class="contact-hub-grid">
+            <!-- Email Item -->
+            <div class="contact-hub-card glass-card hover-glow-card">
+              <div class="contact-hub-icon"><i class="fa-solid fa-envelope"></i></div>
+              <h4>Email Me</h4>
+              <a href="mailto:ajinkumar.s2004@gmail.com" class="hub-link">ajinkumar.s2004@gmail.com</a>
+              <button class="copy-btn copy-btn-hub hover-lift" data-copy="ajinkumar.s2004@gmail.com" title="Copy Email">
+                <i class="fa-regular fa-copy"></i> <span>Copy Email</span>
+              </button>
+            </div>
+
+            <!-- Phone Item -->
+            <div class="contact-hub-card glass-card hover-glow-card">
+              <div class="contact-hub-icon"><i class="fa-solid fa-phone"></i></div>
+              <h4>Call / WhatsApp</h4>
+              <a href="tel:+918754236739" class="hub-link">+91 87542 36739</a>
+              <button class="copy-btn copy-btn-hub hover-lift" data-copy="+918754236739" title="Copy Phone">
+                <i class="fa-regular fa-copy"></i> <span>Copy Phone</span>
+              </button>
+            </div>
+
+            <!-- Location Item -->
+            <div class="contact-hub-card glass-card hover-glow-card">
+              <div class="contact-hub-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <h4>Location</h4>
+              <p class="hub-link-text">Kanyakumari, Tamil Nadu, India</p>
+              <span class="location-badge"><i class="fa-solid fa-globe"></i> Open to Relocation</span>
+            </div>
+          </div>
+
+          <!-- Social Direct Connect Bar -->
+          <div class="contact-hub-socials glass-card hover-glow-card">
+            <h4>Connect via Professional Platforms</h4>
+            <div class="social-hub-buttons">
+              <a href="https://github.com/Ajinkumar-project" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-lg hover-lift">
+                <i class="fa-brands fa-github"></i> GitHub Profile
+              </a>
+              <a href="https://linkedin.com/in/ajin-kumar-28421b286" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-lg hover-lift">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- QUICK RESUME MODAL -->
+  <div id="resume-modal" class="modal-overlay">
+    <div class="modal-container glass-card">
+      <button class="modal-close-btn" id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <h2>Ajin Kumar S</h2>
+          <p>Software Developer | Python &amp; Django Specialist | B.Tech IT</p>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="window.print()">
+          <i class="fa-solid fa-print"></i> Print / Save PDF
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="resume-preview-section">
+          <h4><i class="fa-solid fa-bullseye"></i> Executive Summary</h4>
+          <p>B.Tech IT graduate with CGPA 7.9/10, featuring extensive internship background in Python full-stack
+            engineering, Django web architecture, Flutter cross-platform mobile apps, and machine learning analytics.
+            Open to software developer roles.</p>
+        </div>
+
+        <div class="resume-preview-section">
+          <h4><i class="fa-solid fa-briefcase"></i> Experience</h4>
+          <ul>
+            <li><strong>Python Full Stack Intern</strong> @ Cadpoint (Dec 2025 - Jun 2026)</li>
+            <li><strong>Web Development Intern</strong> @ Technofly Solution (Jul 2025 - Aug 2025)</li>
+            <li><strong>Python Intern</strong> @ E-Max Education (Jan 2025 - Feb 2025)</li>
+            <li><strong>Python &amp; AI Intern</strong> @ Scope India (Feb 2024 - Mar 2024)</li>
+          </ul>
+        </div>
+
+        <div class="resume-preview-section">
+          <h4><i class="fa-solid fa-code"></i> Core Stack</h4>
+          <p>Python, Django, JavaScript, Flutter, Dart, SQL, MySQL, SQLite, HTML5, CSS3, REST APIs, Git, Scikit-learn,
+            Android Studio.</p>
+        </div>
+
+        <div class="resume-preview-section">
+          <h4><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+          <p><strong>B.Tech Information Technology</strong> - Marthandam College of Engg &amp; Tech (Anna Univ),
+            2022-2026 | CGPA: 7.9</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-code">&lt;</span>Ajin<span class="logo-dot">.</span>Kumar<span class="logo-code">
+            /&gt;</span>
+        </a>
+        <p>Crafting intelligent, scalable, and responsive software experiences.</p>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; <span id="current-year">2026</span> Ajin Kumar S. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
