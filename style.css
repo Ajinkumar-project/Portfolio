@@ -1866,6 +1866,9 @@ body {
     max-width: none;
     padding: 0 16px; 
   }
+  .navbar-header {
+    height: var(--nav-height);      /* allow header to grow naturally */
+  }
   .hero-buttons {
     flex-direction: column;
     width: 100%;
