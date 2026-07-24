@@ -438,7 +438,6 @@ body {
 }
 
 .nav-container {
-  width: 90%;
   max-width: var(--container-max-width);
   height: 100%;
   margin: 0 auto;
