@@ -439,7 +439,6 @@ body {
 
 .nav-container {
   width: 90%;
-  max-width: var(--container-max-width);
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -1785,7 +1784,7 @@ body {
     position: fixed;
     top: var(--nav-height);
     left: -100%;
-    width: auto;
+    width: 100%;
     height: calc(100vh - var(--nav-height));
     background: var(--bg-primary);
     flex-direction: column;
