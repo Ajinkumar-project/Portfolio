@@ -154,7 +154,7 @@ body {
 }
 
 .orb-1 {
-  width: 500px;
+  /* width: 500px; */
   height: 500px;
   background: var(--accent-primary);
   top: -100px;
@@ -162,7 +162,7 @@ body {
 }
 
 .orb-2 {
-  width: 450px;
+  /* width: 450px; */
   height: 450px;
   background: var(--accent-secondary);
   top: 40%;
@@ -170,7 +170,7 @@ body {
 }
 
 .orb-3 {
-  width: 600px;
+  /* width: 600px; */
   height: 600px;
   background: var(--accent-primary);
   bottom: 5%;
@@ -439,6 +439,7 @@ body {
 
 .nav-container {
   width: 90%;
+  max-width: var(--container-max-width);
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -1850,9 +1851,6 @@ body {
     display: none;
   }
 }
-
-
-
 
 @media (max-width: 480px) {
   .hero-buttons {
