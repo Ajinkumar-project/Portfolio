@@ -2,6 +2,7 @@
  * Ajin Kumar S Portfolio - Custom Cursor & Interactive Engine
  */
 
+
 document.addEventListener('DOMContentLoaded', () => {
   initCustomCursor();
   initThemeToggle();
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   1. CUSTOM GLOWING POINTER CURSOR WITH LERP PHYSICS
+   1. CUSTOM GLOWING POINTER CURSOR WITH LERP PHYSICS  Removed Quick resume
    ========================================================================== */
 function initCustomCursor() {
   const dot = document.getElementById('cursor-dot');
