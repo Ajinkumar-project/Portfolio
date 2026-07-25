@@ -2,6 +2,10 @@
  * Ajin Kumar S Portfolio - Custom Cursor & Interactive Engine
  */
 
+[...document.querySelectorAll('*')].filter(el => el.scrollWidth > el.clientWidth)
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   initCustomCursor();
   initThemeToggle();
