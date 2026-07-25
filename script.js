@@ -2,16 +2,6 @@
  * Ajin Kumar S Portfolio - Custom Cursor & Interactive Engine
  */
 
-// Highlight elements that overflow the mobile viewport
-document.querySelectorAll('*').forEach(el => {
-  if (el.scrollWidth > window.innerWidth) {
-    el.style.outline = "2px solid red"; // visually mark the culprit
-    console.log("Overflow:", el);
-  }
-});
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   initCustomCursor();
   initThemeToggle();
