@@ -2,7 +2,6 @@
  * Ajin Kumar S Portfolio - Custom Cursor & Interactive Engine
  */
 
-
 document.addEventListener('DOMContentLoaded', () => {
   initCustomCursor();
   initThemeToggle();
@@ -11,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initSkillsFilter();
   initMobileMenu();
   initScrollSpy();
-  initResumeModal();
+  initResumeDownload();
   initCopyButtons();
   setCurrentYear();
 });
 
 /* ==========================================================================
-   1. CUSTOM GLOWING POINTER CURSOR WITH LERP PHYSICS  Removed Quick resume
+   1. CUSTOM GLOWING POINTER CURSOR WITH LERP PHYSICS
    ========================================================================== */
 function initCustomCursor() {
   const dot = document.getElementById('cursor-dot');
@@ -280,28 +279,14 @@ function initScrollSpy() {
 
 
 /* ==========================================================================
-   8. RESUME DOWNLOAD & MODAL
+   8. RESUME DOWNLOAD NOTIFICATION
    ========================================================================== */
-function initResumeModal() {
+function initResumeDownload() {
   const downloadBtn = document.getElementById('download-resume-btn');
-  const modal = document.getElementById('resume-modal');
-  const closeBtn = document.getElementById('close-modal-btn');
 
   if (downloadBtn) {
     downloadBtn.addEventListener('click', () => {
       showToast("Downloading Ajin Kumar (Resume).pdf...");
-    });
-  }
-
-  if (modal && closeBtn) {
-    closeBtn.addEventListener('click', () => {
-      modal.classList.remove('active');
-    });
-
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.remove('active');
-      }
     });
   }
 }
